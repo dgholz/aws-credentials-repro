@@ -10,7 +10,7 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::123456789012:role/MyRole
-          role-duration-seconds: 6000
+          role-duration-seconds: 1200
           aws-region: us-east-1
           aws-access-key-id: placeholder_access_key_id
           aws-secret-access-key: placeholder_secret_access_key
