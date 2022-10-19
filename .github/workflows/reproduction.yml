@@ -12,5 +12,5 @@ jobs:
           role-to-assume: arn:aws:iam::123456789012:role/MyRole
           role-duration-seconds: 1200
           aws-region: us-east-1
-          aws-access-key-id: placeholder_access_key_id
-          aws-secret-access-key: placeholder_secret_access_key
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
